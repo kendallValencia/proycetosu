@@ -8,6 +8,7 @@ public:
 	ListaEnlazada();
 	void Insertar(int valor);
 	void Mostrar();
+	void busccar(int num);
 
 };
 

@@ -12,15 +12,43 @@
 
 int main()
 {
+    int interruptor = 1;
+    int num;
+    string op;
+    int variable_buscar;
+    int cuenta = 0;
 
     ListaEnlazada lista;
-    lista.Insertar(20);
-    lista.Insertar(10);
-    lista.Insertar(8);
-    lista.Insertar(7);
-    lista.Insertar(30);
 
-    lista.Mostrar();
+    while (interruptor) {
+
+        cout << "ingrese un numero: " << endl;
+        cin >> num;
+        lista.Insertar(num);
+
+        cout << "desea continuar?: " << "\n";
+        cin >> op;
+
+        interruptor = (op == "no") ? 0 : 1;
+       
+        cuenta++;
+        
+    }
+    int numero_buscar;
+
+    cout << "cual numero quiere buscar?: " << endl;
+    cin >> numero_buscar;
+    lista.busccar(numero_buscar);
+
+
+
+
+    //for (int i = 0; i < cuenta; i++) {}
+
+    
+
+
+    //lista.Mostrar();
     /*int i = 10;
     int* x = &i;
 
@@ -76,7 +104,7 @@ int main()
    //     }
    //     
 
-
+    // variabe = (condicion) ? verdadero : falso;
 
 
    // }
